@@ -1,10 +1,15 @@
 import { createRouter, createWebHistory, useRoute } from 'vue-router'
 import UserView from '../views/UserView.vue'
+import TodoView from '../views/TodoView.vue'
 
 const routes = [
   {
     path: '/users/:userId',
     component: UserView
+  },
+  {
+    path: '/users/:userId/todos',
+    component: TodoView
   }
 ]
 

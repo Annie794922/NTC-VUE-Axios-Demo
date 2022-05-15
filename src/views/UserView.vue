@@ -4,7 +4,7 @@
 <div>Email: {{userInfo.email}}</div>
 <hr>
 
-<router-link :to="`/users/${id}/todos`">{{userInfo.username}} 的 todo</router-link>
+<router-link :to="`/users/${$route.params.userId}/todos`">{{userInfo.username}} 的 todo</router-link>
 <router-view/>
 </template>
 <script>
