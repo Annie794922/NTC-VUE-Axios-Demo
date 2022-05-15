@@ -1,7 +1,11 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouter, createWebHistory, useRoute } from 'vue-router'
+import UserView from '../views/UserView.vue'
 
 const routes = [
+  {
+    path: '/users/:userId',
+    component: UserView
+  }
 ]
 
 const router = createRouter({
